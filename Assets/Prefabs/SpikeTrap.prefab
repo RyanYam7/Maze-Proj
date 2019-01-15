@@ -91,16 +91,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4508909357975284}
-<<<<<<< HEAD
   - component: {fileID: 135506344948045074}
   m_Layer: 0
   m_Name: Spikes (2)
   m_TagString: spike
-=======
-  m_Layer: 0
-  m_Name: Spikes (2)
-  m_TagString: Untagged
->>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -464,10 +458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4576754543284788}
-<<<<<<< HEAD
   - component: {fileID: 54042379269006342}
-=======
->>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
   m_Layer: 0
   m_Name: SpikeTrap
   m_TagString: Untagged
@@ -825,8 +816,6 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &4508909357975284
-<<<<<<< HEAD
-=======
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -845,32 +834,10 @@ Transform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4576754543284788
->>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1144013597428318}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 20, z: 1}
-  m_Children:
-  - {fileID: 4507508281301338}
-  - {fileID: 4005571005672026}
-  - {fileID: 4154651016154776}
-  - {fileID: 4988422428235288}
-  - {fileID: 4207171407850188}
-  m_Father: {fileID: 4576754543284788}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4576754543284788
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-=======
->>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
   m_GameObject: {fileID: 1787917607122242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2143,7 +2110,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044526231988440}
   m_Mesh: {fileID: 4300000, guid: 3a8337c3b7acd4dd5a2f36a57233288d, type: 3}
-<<<<<<< HEAD
 --- !u!54 &54042379269006342
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -2159,8 +2125,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
-=======
->>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
 --- !u!65 &65037360619006736
 BoxCollider:
   m_ObjectHideFlags: 1

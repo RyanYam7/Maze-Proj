@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4367636, g: 0.4843796, b: 0.5646253, a: 1}
+  m_IndirectSpecularColor: {r: 0.43675214, g: 0.48436612, b: 0.56461924, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -273,11 +273,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_JumpSpeed
-<<<<<<< HEAD
       value: 6
-=======
-      value: 7
->>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_CullingMask.m_Bits
