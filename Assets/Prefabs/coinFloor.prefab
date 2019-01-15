@@ -22,8 +22,11 @@ GameObject:
   - component: {fileID: 33235345243922722}
   - component: {fileID: 23289119605249836}
   - component: {fileID: 114538727939889226}
+<<<<<<< HEAD
   - component: {fileID: 135495666557827654}
   - component: {fileID: 114572952569024078}
+=======
+>>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
   m_Layer: 0
   m_Name: Gold Coin 1
   m_TagString: coin
@@ -257,6 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+<<<<<<< HEAD
 --- !u!114 &114572952569024078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,3 +285,5 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.0019264458}
+=======
+>>>>>>> e043f2fac340b89cdaa99b59552d1994c358a84d
