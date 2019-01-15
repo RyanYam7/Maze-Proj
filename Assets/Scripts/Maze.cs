@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//maze proj
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,18 +10,10 @@ public class Maze : MonoBehaviour {
     public class Cell
     {
         public bool visited;
-        public GameObject north;
-        public GameObject east;
-        public GameObject west;
-        public GameObject south;
+        public GameObject north, east, west, south;
     }
-
-    public GameObject wall;
-    public GameObject floor;
+    public GameObject wall, floor, wallTrap, spikeTrap, openFloor, coinFloor, endFloor;
     public float wallLength;
-    public GameObject wallTrap;
-    public GameObject spikeTrap;
-    //public GameObject openFloor;
     public int size;
 
     private int upDown = 8;
@@ -94,11 +88,19 @@ public class Maze : MonoBehaviour {
             {
                 int r = Random.Range(0, size);
                 GameObject g;
-                /*if (r == 2)
+                if (i == 0 && j == 0)
+                {
+                    g = floor;
+                }
+                else if (i == size-1 && j == size-1)
+                {
+                    g = endFloor;
+                }
+                else if (r == 2)
                 {
                     g = openFloor;
-                }*/
-                /* else*/ if (r == 4 || r == 6)
+                }
+                else if (r == 4 || r == 6)
                 {
                     g = wallTrap;
                 }
@@ -106,20 +108,30 @@ public class Maze : MonoBehaviour {
                 {
                     g = spikeTrap;
                 }
+                else if (r % 5 == 0)
+                {
+                    g = coinFloor;
+                }
                 else
                 {
                     g = floor;
                 }
                 myPos = new Vector3(initialPos.x + (j * wallLength), -0.5f, initialPos.z + (i * wallLength) - wallLength / 2);
-                /*if (g == openFloor)
+                if (g == openFloor)
                 {
                     tempTrap = Instantiate(g, myPos, Quaternion.identity) as GameObject;
+                    tempTrap.transform.parent = wallHold.transform;
                     continue;
-                }*/
-                tempFloor = Instantiate(floor, myPos, Quaternion.identity) as GameObject;
-                tempTrap = Instantiate(g, myPos, Quaternion.identity) as GameObject;
+                }
+                if (g == wallTrap)
+                {
+                    tempFloor = Instantiate(floor, myPos, Quaternion.identity) as GameObject;
+                    tempTrap = Instantiate(g, myPos, Quaternion.identity) as GameObject;
+                    tempFloor.transform.parent = wallHold.transform;
+                    tempTrap.transform.parent = wallHold.transform;
+                }
+                tempFloor = Instantiate(g, myPos, Quaternion.identity) as GameObject;
                 tempFloor.transform.parent = wallHold.transform;
-                tempTrap.transform.parent = wallHold.transform;
             }
         }
 
