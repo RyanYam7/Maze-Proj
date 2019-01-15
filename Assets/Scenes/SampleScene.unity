@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43675214, g: 0.48436612, b: 0.56461924, a: 1}
+  m_IndirectSpecularColor: {r: 0.4367636, g: 0.4843796, b: 0.5646253, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -273,7 +273,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_JumpSpeed
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_CullingMask.m_Bits
@@ -508,9 +508,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wall: {fileID: 1745063787017052, guid: 97b20b1a1552c4b8cb4e0accbe2e532e, type: 2}
   floor: {fileID: 1827871846676222, guid: a0698475905494381826c6562ba7144a, type: 2}
-  wallLength: 1
   wallTrap: {fileID: 1463201747670396, guid: e964ada7aa7e2425d928adbd4fa38f0e, type: 2}
-  spikeTrap: {fileID: 1102110770328440, guid: 267e80d52519445a79e09d38e53c3472, type: 2}
+  spikeTrap: {fileID: 1787917607122242, guid: 267e80d52519445a79e09d38e53c3472, type: 2}
+  openFloor: {fileID: 1979020295528588, guid: 9c37d9f1055d5496eb0f64655c50c546, type: 2}
+  coinFloor: {fileID: 1915125262809644, guid: 9c12bdfca94504c15b0afd93c08eb1f4, type: 2}
+  endFloor: {fileID: 1004000430885792, guid: b87de37884af9472b9497ab95c4e8947, type: 2}
+  wallLength: 1
   size: 20
 --- !u!4 &824737603
 Transform:
