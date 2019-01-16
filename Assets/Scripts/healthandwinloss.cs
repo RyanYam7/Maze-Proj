@@ -55,7 +55,7 @@ public class healthandwinloss : MonoBehaviour {
             source.Play();
         }
         if(player.transform.position.y <= -1){
-            endText.text = "You have fell out of the map!";
+            endText.text = "You have fallen out of the map!";
             health = 0;
             source = m_dead;
             source.Play();
@@ -71,13 +71,14 @@ public class healthandwinloss : MonoBehaviour {
             scoreText.text = "Score: " + score;
         }
 
-        if(other.gameObject.CompareTag("spike")){
-            if(health > 0){
+        if (other.gameObject.CompareTag("spike"))
+        {
+            if (health > 0)
+            {
                 health = health - 5;
+                healthText.text = "Health: " + health;
                 source = m_damage;
                 source.Play();
-                healthText.text = "Health: " + health;
-                
             }
         }
     }
