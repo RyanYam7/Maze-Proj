@@ -3,7 +3,7 @@ using System.Collections;
 
 public class coinSpin : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 100f;
     
     
     void Update ()

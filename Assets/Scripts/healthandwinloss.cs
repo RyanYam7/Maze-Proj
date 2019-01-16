@@ -33,9 +33,18 @@ public class healthandwinloss : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         CheckLose();
-
+        //CheckRestart();
 	}
 
+    /*void CheckRestart(){
+        if(Input.GetButtonDown(KeyCode.R)){
+            health = 100;
+            score = 0;
+            healthText.text = "Health: " + health;
+            endText.text = "";
+            scoreText.text = "Score: " + score;
+        }
+    }*/
     void CheckLose()
     {
         healthText.text = "Health: " + health;
@@ -64,12 +73,19 @@ public class healthandwinloss : MonoBehaviour {
 
         if(other.gameObject.CompareTag("spike")){
             if(health > 0){
+                health = health - 5;
                 source = m_damage;
                 source.Play();
-                health = health - 5;
                 healthText.text = "Health: " + health;
                 
             }
+        }
+    }
+
+    void OnCollisionEnter(Collision col){
+        if (col.gameObject.CompareTag("end"))
+        {
+            endText.text = "You have finished the map with a score of " + score + " and " + health + " health.";
         }
     }
 

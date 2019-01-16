@@ -21,10 +21,9 @@ GameObject:
   - component: {fileID: 4736623830608938}
   - component: {fileID: 33235345243922722}
   - component: {fileID: 23289119605249836}
-  - component: {fileID: 114538727939889226}
   - component: {fileID: 135495666557827654}
   - component: {fileID: 114572952569024078}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gold Coin 1
   m_TagString: coin
   m_Icon: {fileID: 0}
@@ -41,7 +40,7 @@ GameObject:
   - component: {fileID: 4244225420332912}
   - component: {fileID: 33659579611355212}
   - component: {fileID: 23194872515221900}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Coin 1 Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +58,7 @@ GameObject:
   - component: {fileID: 33115042073660544}
   - component: {fileID: 23249634516482638}
   - component: {fileID: 65399046542396646}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: coinFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +156,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4d0640d6c77aae345b3f366c388d8b6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -245,18 +244,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114538727939889226
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1531082510194426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e8bdaf736ccd49cebafd1f46b085aa3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!114 &114572952569024078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,5 +266,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.01
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0.0019264458}
