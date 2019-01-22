@@ -3,7 +3,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.AI;
 
 public class Maze : MonoBehaviour {
 
@@ -13,10 +15,11 @@ public class Maze : MonoBehaviour {
         public bool visited;
         public GameObject north, east, west, south;
     }
+
     public GameObject wall, floor, wallTrap, spikeTrap, openFloor, coinFloor, endFloor;
     public float wallLength;
     public int size;
-    //public FirstPersonController player;
+    public FirstPersonController player;
 
     private int upDown = 8;
     private int currentCell = 0;
@@ -40,18 +43,22 @@ public class Maze : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//need to add restart feature
+        endGame();
 	}
 
-    /*void RestartGame() {
-        if(Input.GetButtonDown(KeyCode.R)){
-            //code to destroy game
-
-            player.transform.position.x = -9.4;
-            player.transform.position.y = 0.2;
-            player.transform.position.z = -10;
+    void endGame()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("SampleScene");
+            player.transform.position = new Vector3(-9.4f, 0.2f, -10f);
         }
-    }*/
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+        }
+    }
+
     void showWallTraps()
     {
         upDown = -upDown;

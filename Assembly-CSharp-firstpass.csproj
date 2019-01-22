@@ -345,6 +345,12 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
  </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{A172A5CF-9F89-A20F-1C82-7304489DF040}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{62D049A7-B473-C7A0-4D57-F752B8DC47A9}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

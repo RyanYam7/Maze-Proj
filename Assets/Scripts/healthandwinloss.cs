@@ -21,6 +21,7 @@ public class healthandwinloss : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Time.timeScale = 1;
         health = 100;
         healthText.text = "Health: " + health;
         endText.text = "";
@@ -33,29 +34,21 @@ public class healthandwinloss : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         CheckLose();
-        //CheckRestart();
 	}
 
-    /*void CheckRestart(){
-        if(Input.GetButtonDown(KeyCode.R)){
-            health = 100;
-            score = 0;
-            healthText.text = "Health: " + health;
-            endText.text = "";
-            scoreText.text = "Score: " + score;
-        }
-    }*/
     void CheckLose()
     {
         healthText.text = "Health: " + health;
         if (health == 0)
         {
-            endText.text = "You have lost all your health!";
+            Time.timeScale = 0;
+            endText.text = "You have lost all your health! Press R to Restart!";
             source = m_dead;
             source.Play();
         }
         if(player.transform.position.y <= -1){
-            endText.text = "You have fallen out of the map!";
+            Time.timeScale = 0;
+            endText.text = "You have fallen out of the map! Press R to Restart!";
             health = 0;
             source = m_dead;
             source.Play();
@@ -75,20 +68,17 @@ public class healthandwinloss : MonoBehaviour {
         {
             if (health > 0)
             {
-                health = health - 5;
-                healthText.text = "Health: " + health;
                 source = m_damage;
                 source.Play();
+                health = health - 5;
+                healthText.text = "Health: " + health;
             }
         }
-    }
-
-    void OnCollisionEnter(Collision col){
-        if (col.gameObject.CompareTag("end"))
+        if (other.gameObject.CompareTag("end"))
         {
-            endText.text = "You have finished the map with a score of " + score + " and " + health + " health.";
+            Time.timeScale = 0;
+            endText.text = "You win! Score: " + score + " Health: " + health + " Press R to Restart or Q to Quit!";
         }
     }
-
 
 }

@@ -55,10 +55,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraChange.cs" />
      <Compile Include="Assets\Scripts\coinSpin.cs" />
+     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\Follow.cs" />
      <Compile Include="Assets\Scripts\healthandwinloss.cs" />
      <Compile Include="Assets\Scripts\MapCam.cs" />
      <Compile Include="Assets\Scripts\Maze.cs" />
+     <Compile Include="Assets\Scripts\NavMeshBaker.cs" />
      <Compile Include="Assets\Scripts\seeChangeMap.cs" />
      <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
      <None Include="Assets\20 Ground Material Sets MAN MADE\readme.txt" />
@@ -309,6 +311,10 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{3166893B-25DC-9D6A-0C8C-14152F493D3C}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{A172A5CF-9F89-A20F-1C82-7304489DF040}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{62D049A7-B473-C7A0-4D57-F752B8DC47A9}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

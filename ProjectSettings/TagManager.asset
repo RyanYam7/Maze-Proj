@@ -8,6 +8,7 @@ TagManager:
   - coin
   - spike
   - end
+  - box
   layers:
   - Default
   - TransparentFX
