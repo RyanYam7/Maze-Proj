@@ -79,6 +79,11 @@ public class healthandwinloss : MonoBehaviour {
             Time.timeScale = 0;
             endText.text = "You win! Score: " + score + " Health: " + health + " Press R to Restart or Q to Quit!";
         }
+        if (other.gameObject.CompareTag("box"))
+        {
+            health = health - 50;
+            Destroy(other);
+        }
     }
 
 }
